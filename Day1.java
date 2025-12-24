@@ -56,20 +56,8 @@ public class Day1{
         }
         return -1;
     }
-    //ReverseArray
-    public static void reverseArray(int arr[])
-    {
-        int i=0;int j=arr.length-1; int temp;
-        while(i<j)
-        {
-            temp=arr[j];
-            arr[j]=arr[i];
-            arr[i]=temp;
-            i++;
-            j--;
-        }
-    }
-    //SubArray
+    
+    //Print SubArray & find Max and Min subArray
     public static void subArray(int arr[]){
         int largest=Integer.MIN_VALUE;
         int smallest=Integer.MAX_VALUE;
@@ -96,7 +84,20 @@ public class Day1{
         System.out.println("largest Sub array is: "+largest);
         System.out.println("smallgest Sub array is: "+smallest);
     }
-    //pair array
+    //ReverseArray
+    public static void reverseArray(int arr[])
+    {
+        int i=0;int j=arr.length-1; int temp;
+        while(i<j)
+        {
+            temp=arr[j];
+            arr[j]=arr[i];
+            arr[i]=temp;
+            i++;
+            j--;
+        }
+    }
+    //pairs in an array
     public static void pairArr(int arr[])
     {
         int count=0;
