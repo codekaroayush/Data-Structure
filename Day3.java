@@ -26,6 +26,7 @@ public class Day3{
             arr[i]=temp;
         }
     }
+    
     //Insertion Sort
     public static void insertionSort(int arr[]){
         for(int i=1;i<arr.length;i++){
