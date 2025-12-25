@@ -63,6 +63,7 @@ public class Day2{
         return trappedWater;
 
     }
+    //buy and sell stocks
     public static int buyAndSellStocks(int prices[]){
         int buyprice=Integer.MAX_VALUE;
         int maxProfit=0;
