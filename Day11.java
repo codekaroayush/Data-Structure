@@ -35,23 +35,23 @@ class King implements ChessPlayer{
     }
 }
 //Abstract Class
-// abstract class Animal{
-//     void eat(){
-//         System.out.println("eats..");
-//     }
-//     abstract void color();
-// }
-// class Horse extends Animal{
-//     void color(){
-//         System.out.println("Brown");
-//     }
+abstract class Animal{
+    void eat(){
+        System.out.println("eats..");
+    }
+    abstract void color();
+}
+class Horse extends Animal{
+    void color(){
+        System.out.println("Brown");
+    }
 
-// }
-// class Fish extends Animal{
-//     void color(){
-//         System.out.println("Blue");
-//     }
-// }
+}
+class Fish extends Animal{
+    void color(){
+        System.out.println("Blue");
+    }
+}
 
 // //Method overriding
 // class Animal{
