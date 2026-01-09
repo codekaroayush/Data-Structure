@@ -13,7 +13,8 @@ public static int printArray(int arr[]){
 
 //Merge Sort
 public static void mergeSort(int arr[],int si,int ei){
-    if(si>=ei){
+    if(si>=ei)
+    {
         return;
     }
     //find out Mid
