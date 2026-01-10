@@ -1,4 +1,5 @@
 public class Day17{
+
     public static boolean isSafe(char board[][],int row,int col){
         //vertical up
         for(int i=row-1;i>=0;i--){
@@ -20,6 +21,7 @@ public class Day17{
         }
         return true;
     }
+
     //n queen function
     public static void nQueen(char board[][],int row){
        //base case
@@ -39,6 +41,7 @@ public class Day17{
            
         }
     }
+    
     //print Board
     public static void printBoard(char board[][]){
          System.out.println("---------chess board----------");
@@ -51,7 +54,9 @@ public class Day17{
             
         }
     }
+    
     public static void main(String args[]){
+        
         int n=4;
         char board[][]=new char[n][n];
         for(int i=0;i<n;i++){
@@ -60,6 +65,6 @@ public class Day17{
             }
             
         }
-        nQueen(board,0);
+       nQueen(board,0);
     }
 }
