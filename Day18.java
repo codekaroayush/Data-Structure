@@ -1,4 +1,6 @@
 public class Day18 {
+    
+    //Grid way Problem
     public static int gridWays(int row,int col,int n,int m){
         if(row==n-1 && col==m-1){
             return 1;
@@ -9,6 +11,8 @@ public class Day18 {
        int  w2=gridWays(row,col+1,n,m);
        return w1+w2;
     }
+
+
     //safe function
     public static boolean isSafe(int suduko[][],int row,int col,int digit){
         //col
