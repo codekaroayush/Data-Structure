@@ -53,6 +53,51 @@ public class Array {
         return true;
     }
 
+    public static int removeDuplicates(int[] nums) {
+        ArrayList<Integer> arr=new ArrayList<>();
+        //arr[0]=nums[0];
+        int j=1;
+        arr.add(nums[0]);
+        for(int i=1;i<nums.length;i++){
+             
+            if(nums[i]!=arr.get(j-1)){
+                arr.add(nums[i]);
+                j++;
+            }
+        }
+         int x=arr.size();
+        for(int i=0;i<x;i++){
+            nums[i]=arr.get(i);
+        }
+        for(int i=x;i<nums.length;i++){
+            nums[i]=0;
+        }
+        // for(int i=0;i<nums.length;i++){
+        //     System.out.print(nums[i]+" ");
+        // }
+        return j;
+    }
+
+    public static void moveZeroes(int[] nums) {
+        ArrayList<Integer> arr=new ArrayList<>();
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=0){
+                arr.add(nums[i]);
+            }
+        }
+
+        int x=arr.size();
+        for(int i=0;i<x;i++){
+            nums[i]=arr.get(i);
+        }
+        for(int i=x;i<nums.length;i++){
+            nums[i]=0;
+        }
+
+        for(int i=0;i<nums.length;i++){
+            System.out.print(nums[i]+" ");
+        }
+    }
     public static void main(String[] args) {
         //int arr[]={2,4,6,8,10};
         // int prefix[]=new int[arr.length];
@@ -60,11 +105,14 @@ public class Array {
         // for(int i=1;i<arr.length;i++){
         //     prefix[i]=prefix[i-1]+arr[i];
         // }
+        int nums[]={ 2, 4, 4, 4, 4, 5, 5};
         
         //pairInArr(arr);
         //printsubarray(arr);
-        String str="racecare";
-        System.out.println(isPalindrome(str));
-
+        // String str="racecare";
+        // System.out.println(isPalindrome(str));
+        System.out.println(removeDuplicates(nums));
+        //System.out.println();
+        //moveZeroes(nums);
     }
 }
