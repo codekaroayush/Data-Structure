@@ -3,7 +3,8 @@ package Stack;
 import java.util.Stack;
 
 public class Day32 {
-    public static void stockSpan(int stock[],int span[]){
+
+   public static void stockSpan(int stock[],int span[]){
         Stack<Integer> s=new Stack<>();
         span[0]=1;
         s.push(0);
@@ -20,7 +21,7 @@ public class Day32 {
             }
             s.push(i);
         }
-
+    
     } 
     public static void main(String[] args) {
         int stock[]={100,80,60,70,60,85,100};
