@@ -49,9 +49,8 @@ public class Day60 {
             }
            
              postorder(root.left);
-             postorder(root.right);
              System.out.print(root.data+" ");
-            
+             postorder(root.right);
         }
     }
     
